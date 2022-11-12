@@ -5,34 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <form id="form" action="/"  method="get">
     <label for="First-Name">First Name</label>
-    <input type="text" name="first" id="First-Name">
-
     <label for="Last-Name">Last Name</label>
-    <input type="text" name="last" id="Last-Name">
 
-    <div></div>
+    <p></p>
+
+    <input type="text" name="first" id="First-Name" required pattern="[A-Za-z]+">
+    <input type="text" name="last" id="Last-Name" required>
+
+    <p></p>
 
     <label for="Email">Email</label>
-    <input type="text" name="email" id="Email">
-    
     <label for="Phone-Number">Phone Number</label>
-    <input type="text" name="number" id="Phone-Number">
 
-    <div></div>
+    <p></p>
+
+    <input type="email" name="email" id="Email" required>
+    <input type="text" name="number" id="Phone-Number" pattern="(\d{3}[-]\d{3}[-]\d{4})" required>
+
+    <p></p>
 
     <label for="Password">Password</label>
-    <input type="text"  name="password" id="Password">
-
     <label for="Confirmation">Confirm Password</label>
+
+    <p></p>
+
+    <input type="text"  name="password" id="Password">
     <input type="text" name="confirmation" id="Confirmation">
 
-    <div></div>
+    <p></p>
 
-    <button>Submit</button>
-
+    <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
