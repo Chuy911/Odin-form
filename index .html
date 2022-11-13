@@ -10,41 +10,49 @@
     
 </head>
 <body>
+    <div class="body">
+
+    <div id="img">
+        <img srcset="doometernal.jpg">
+    </div>
+
     <div class="signup">
+        <form id="form" action="/"  method="get">
+
+        <div class="formItem">
+        <label for="First-Name">First Name</label>
+        <label for="Last-Name">Last Name</label>
+        </div>
     
-    <form id="form" action="/"  method="get">
-    <div class="form">
-    <label for="First-Name">First Name</label>
-    <label for="Last-Name">Last Name</label>
+        <div class="formItem">
+        <input type="text" name="first" id="First-Name" placeholder="John" required pattern="[A-Za-z]+">
+        <input type="text" name="last" id="Last-Name" placeholder="Smith" required pattern="[A-Za-z]+">
+        </div>
+    
+        <div class="formItem">
+        <label for="Email">Email</label>
+        <label for="Phone-Number">Phone Number</label>
+        </div>
+    
+        <div class="formItem">
+        <input type="email" name="email" id="Email" placeholder="you@email.com" required>
+        <input type="text" name="number" id="Phone-Number" placeholder="000-000-0000" pattern="(\d{3}[-]\d{3}[-]\d{4})" required>
+        </div>
+    
+        <div class="formItem">
+        <label for="Password">Password</label>
+        <label for="Confirmation">Confirm Password</label>
+        </div>
+    
+        <div class="formItem">
+        <input type="password"  name="password" id="Password" placeholder= "****"required>
+        <input type="password" name="confirmation" id="Confirmation" placeholder="****" required>
+        </div>
+    
+        <button id="Submit">Submit</button>
+        </form>
+
     </div>
-    
-    <div class="form">
-    <input type="text" name="first" id="First-Name" placeholder="John" required pattern="[A-Za-z]+">
-    <input type="text" name="last" id="Last-Name" placeholder="Smith" required pattern="[A-Za-z]+">
-    </div>
-    
-    <div class="form">
-    <label for="Email">Email</label>
-    <label for="Phone-Number">Phone Number</label>
-    </div>
-    
-    <div class="form">
-    <input type="email" name="email" id="Email" placeholder="you@email.com" required>
-    <input type="text" name="number" id="Phone-Number" placeholder="000-000-0000" pattern="(\d{3}[-]\d{3}[-]\d{4})" required>
-    </div>
-    
-    <div class="form">
-    <label for="Password">Password</label>
-    <label for="Confirmation">Confirm Password</label>
-    </div>
-    
-    <div class="form">
-    <input type="password"  name="password" id="Password" placeholder= "****"required>
-    <input type="password" name="confirmation" id="Confirmation" placeholder="****" required>
-    </div>
-    
-    <button type="submit" id="Submit">Submit</button>
-    </form>
 
     </div>
 </body>

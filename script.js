@@ -50,5 +50,8 @@ button.addEventListener("click", () => {
     passInput.setCustomValidity('Passwords do not match');
     else
     passInput.setCustomValidity("");
+
     passInput.checkValidity();
+
+    
 })

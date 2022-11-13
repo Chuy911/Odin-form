@@ -21,5 +21,49 @@ input:valid {
     background-color: lightgreen;
 }
 
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
+body{
+    background-color: red;
+}
+
+.signup {
+   flex: 0 0 50%;
+    display: flex;
+    justify-content: center; 
+}
+.formItem {
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+form {
+    background-color: rgb(218, 30, 30);
+    border-radius: 1rem;
+    border: 4px solid black;
+}
+
+#img{
+    flex: 0 0 70%;
+    height: 100vh;
+}
+
+img{
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+}
+button{
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: red;
+    background-color: black;
+    margin: 5px;
+}
 
