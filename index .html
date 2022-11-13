@@ -5,41 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
     <script defer src="script.js"></script>
+    
 </head>
 <body>
+    <div class="signup">
+    
     <form id="form" action="/"  method="get">
+    <div class="form">
     <label for="First-Name">First Name</label>
     <label for="Last-Name">Last Name</label>
-
-    <p></p>
-
-    <input type="text" name="first" id="First-Name" required pattern="[A-Za-z]+">
-    <input type="text" name="last" id="Last-Name" required>
-
-    <p></p>
-
+    </div>
+    
+    <div class="form">
+    <input type="text" name="first" id="First-Name" placeholder="John" required pattern="[A-Za-z]+">
+    <input type="text" name="last" id="Last-Name" placeholder="Smith" required pattern="[A-Za-z]+">
+    </div>
+    
+    <div class="form">
     <label for="Email">Email</label>
     <label for="Phone-Number">Phone Number</label>
-
-    <p></p>
-
-    <input type="email" name="email" id="Email" required>
-    <input type="text" name="number" id="Phone-Number" pattern="(\d{3}[-]\d{3}[-]\d{4})" required>
-
-    <p></p>
-
+    </div>
+    
+    <div class="form">
+    <input type="email" name="email" id="Email" placeholder="you@email.com" required>
+    <input type="text" name="number" id="Phone-Number" placeholder="000-000-0000" pattern="(\d{3}[-]\d{3}[-]\d{4})" required>
+    </div>
+    
+    <div class="form">
     <label for="Password">Password</label>
     <label for="Confirmation">Confirm Password</label>
-
-    <p></p>
-
-    <input type="text"  name="password" id="Password">
-    <input type="text" name="confirmation" id="Confirmation">
-
-    <p></p>
-
-    <button type="submit">Submit</button>
+    </div>
+    
+    <div class="form">
+    <input type="password"  name="password" id="Password" placeholder= "****"required>
+    <input type="password" name="confirmation" id="Confirmation" placeholder="****" required>
+    </div>
+    
+    <button type="submit" id="Submit">Submit</button>
     </form>
+
+    </div>
 </body>
 </html>

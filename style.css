@@ -1,0 +1,25 @@
+
+
+input:required {
+    background-color: white;
+}
+input {
+    border-color: black;
+    border: 1px solid black;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+border: none;
+    background-color: red;
+}
+
+input:focus:not(:placeholder-shown):invalid{
+    background-color: red;
+}
+
+input:valid {
+    background-color: lightgreen;
+}
+
+
+
